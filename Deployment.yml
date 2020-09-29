@@ -19,5 +19,5 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: python-app
+          image: arwenundomiel/demo-deploy
 
