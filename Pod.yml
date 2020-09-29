@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: python-app
+  labels:
+    app: simple-sorter
+    type: demo-app
+spec:
+  containers:
+    - name: python-app
+      image: python-app
