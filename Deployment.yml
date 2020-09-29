@@ -6,7 +6,7 @@ metadata:
     type: python-app
     name: my-sorter
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: simple-sorter
