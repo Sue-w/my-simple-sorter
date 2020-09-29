@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-sorter
+  labels:
+    type: python-app
+    name: my-sorter
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: simple-sorter
+  template:
+    metadata:
+      name: python-app
+      labels:
+        app: simple-sorter
+        type: demo-app
+    spec:
+      containers:
+        - name: python-app
+          image: python-app
+
